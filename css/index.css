@@ -1522,7 +1522,7 @@ blockquote:after {
 .trm-blog-card .trm-cover-frame {
   display: block;
   position: relative;
-  padding-bottom: 60%;
+/*  padding-bottom: 60%;*/
   overflow: hidden;
 }
 .trm-blog-card .trm-cover-frame .trm-cover-date,
