@@ -7,6 +7,21 @@
 :root.dark .trm-light-icon {
   display: none;
 }
+::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+html,
+body {
+  -ms-overflow-style: none;
+  /* IE, Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
 :root {
   --primary: #afb42b;
   --primary-70: rgba(175, 180, 43, 0.7);
@@ -782,8 +797,7 @@ html.is-animating .trm-swup-animation {
     flex-direction: column;
     background-color: var(--theme-bg-color, #fcfcfe);
     position: absolute;
-    z-index: -1;
-    top: 40px;
+    left: 50px;
     left: 0;
     height: auto;
     width: 100%;
@@ -797,6 +811,7 @@ html.is-animating .trm-swup-animation {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0);
+    width: 80%;
   }
 }
 .trm-menu {
@@ -889,14 +904,13 @@ html.is-animating .trm-swup-animation {
     width: 100%;
   }
   .trm-menu nav ul {
-    margin: 20px 0;
+    margin: 0 0;
     flex-direction: row;
   }
   .trm-menu nav ul li {
     width: 25%;
     height: auto;
     display: inline-block;
-    background-color: rgba(175, 180, 43, 0.237);
     border-radius: 6px;
     margin: 0px 4px;
   }
@@ -1119,8 +1133,11 @@ html.is-animating .trm-swup-animation {
   opacity: 1;
 }
 @media (max-width: 1200px) {
+  .trm-mode-switcher-place {
+    display: none;
+  }
   .trm-mode-switcher {
-    margin: 0 0 20px 0 !important;
+    display: none;
   }
 }
 .portfolio {
